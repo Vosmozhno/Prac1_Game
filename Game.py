@@ -120,18 +120,18 @@ def level_25(inventory):
         if choice == 0:
             if random.choice([True, False]):
                 print_slowly("Вам удалось прокрасться мимо монстра незамеченным!")
-                break  # Переход к следующему уровню
+                break 
             else:
                 print_slowly("Монстр заметил вас! Игра окончена.")
-                exit()  # Завершение игры
+                exit()  
         elif choice == 1:
             if "Лом" in inventory:
                 print_slowly("Вы ударили монстра ломом и одержали победу!")
-                break  # Переход к следующему уровню
+                break  
             else:
                 print_slowly("У вас нет лома. Монстр побеждает вас.")
                 print_slowly("Игра окончена.")
-                exit()  # Завершение игры
+                exit() 
 
 def level_3(inventory):
     print_slowly("\n=== Уровень 3: Правда под завесой ===")
